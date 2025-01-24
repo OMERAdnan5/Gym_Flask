@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/styles.css')}}">
+    <title>GYM!</title>
+</head>
+<body>
+    <div class="h">
+     <header>
+        
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('about')}}">About Us</a>
+      <a href="{{url_for('membership')}}">Membership</a>
+     </header>
+    </div>
+    <div style="text-align: center;" ><img src="{{url_for('static',filename='images/GYM logo1.jpg')}}"/></div>   
+    <h1 class="h1">Join Us For A Healthy Life Style</h1> 
+    <div class="flex">   
+      <div class="plan">
+        <h1>Basic Plan</h1>
+        <p>Monthly 19.99$</p>
+        <p>Access to Gym <br> and equipments</p>
+      </div>  
+      <div class="plan">
+        <h1>Professional Plan</h1>
+        <p>Monthly 29.99$</p>
+        <p>Access to Gym <br> and equipments <br>+ Gym Trainer</p>    
+        
+      </div>
+      <div class="plan">
+        <h1>Premium Plan</h1>
+        <p>Monthly 39.99$</p>
+        <p>Access to Gym <br> and equipments <br>+ Gym Trainer <br>and Nutritionist</p>    
+        
+      </div>
+    </div>
+    
+    
+    <div class="h">
+        <footer><p> 2024 XYZ Gym. All rights reserved.</p></footer>
+    </div>
+    
+</body>
+</html>
+    

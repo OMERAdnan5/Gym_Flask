@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/styles.css')}}">
+    <title>GYM!</title>
+</head>
+<body>
+    <div class="h">
+    <header>
+        
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('about')}}">About Us</a>
+        <a href="{{url_for('membership')}}">Membership</a>
+    </header>
+    </div>
+    <div style="text-align: center;" ><img src="{{url_for('static',filename='images/GYM logo1.jpg')}}"/></div>    
+    <div class="home">
+    <h1>Welcome To XYZ GYM</h1>
+    <p> We're thrilled to have you join our community of fitness enthusiasts.<br> Whether you're here to build strength, increase endurance, or improve overall well-being,<br> our state-of-the-art equipment and expert trainers are here to support you every step of the way.</p>
+    <!--<div style="text-align: center;margin-bottom:20px ;">
+    <a href="https://mooremusclehealthandfitness.com/10-reasons-why-gym-is-important/">learn more</a>
+    </div>-->
+    <hr>
+    <h1>Are You Ready To Be Fit & Healthy?</h1>
+    </div>
+    <img style="width:33%;" src="{{url_for('static',filename='images/dumbell.jpg')}}"/>
+    <img style="width:33%;"src="{{url_for('static',filename='images/treadmill.jpg')}}" />
+    <img style="width:33%;" src="{{url_for('static',filename='images/bar.jpg')}}"/>
+    <dev class="h">
+    <footer><p> 2024 XYZ Gym. All rights reserved.</p></footer>
+    </dev>
+</body>
+</html>
+<!-- from flask import Flask,render_template
+app=Flask(__name__)
+@app.route('/')                 deleteing flask folder to run flask elsewhere
+def home():
+    return render_template('home.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')   
+@app.route('/membership')
+def membership():
+    return render_template('membership.html')    
+if __name__ == '__main__':
+    app.run(debug=True)      -->
